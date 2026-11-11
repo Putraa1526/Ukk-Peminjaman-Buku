@@ -1,0 +1,3 @@
+Program Peminjaman Buku adalah aplikasi web untuk mencatat peminjaman buku di perpustakaan sekolah. Aplikasi ini dibuat dengan Laravel 12, panel adminnya memakai Filament 4, dan datanya disimpan di SQLite. Lewat aplikasi ini admin bisa mengisi data buku (judul, penulis, penerbit, tahun terbit, stok) dan data pengguna, baik admin maupun siswa.
+
+Saat ada peminjaman, admin mencatat siapa yang meminjam, buku apa, tanggal pinjam, dan batas pengembaliannya. Kalau buku sudah dikembalikan, admin tinggal menekan tombol "Kembalikan", lalu status berubah jadi "dikembalikan" dan stok buku bertambah lagi. Kalau telat, denda dihitung Rp1.000 per hari. Di halaman dashboard ada ringkasan jumlah judul buku, jumlah anggota, dan jumlah buku yang sedang dipinjam.

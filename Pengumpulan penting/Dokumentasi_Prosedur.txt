@@ -1,0 +1,16 @@
+Alur Aplikasi
+Aplikasi ini berjalan dalam satu alur: admin login, menyiapkan data buku dan siswa, mencatat peminjaman, lalu mencatat pengembalian. Setiap tahap memakai data dari tahap sebelumnya.
+1. Login. Admin masuk lewat halaman /admin. Dashboard langsung menampilkan jumlah judul buku, jumlah anggota, dan jumlah buku yang sedang dipinjam.
+2. Siapkan data. Admin mengisi data buku (lengkap dengan stok) dan data siswa. Kedua data ini harus ada dulu sebelum peminjaman bisa dicatat.
+3. Catat peminjaman. Admin memilih siswa dan buku, lalu mengisi tanggal pinjam dan batas pengembalian. Status otomatis dipinjam. Di tahap ini stok buku belum berkurang sendiri.
+4. Siswa mengembalikan buku. Admin mencari data peminjamannya, lalu menekan tombol Kembalikan.
+5. Sistem memproses pengembalian. Tanggal kembali diisi hari ini, status berubah jadi dikembalikan, dan stok buku bertambah satu. Kalau lewat dari batas pengembalian, denda Rp1.000 per hari ikut dicatat.
+6. Dashboard ikut berubah. Jumlah buku yang sedang dipinjam berkurang sesuai data terbaru.
+
+Alur Siswa
+Siswa tidak punya halaman sendiri di aplikasi ini. Semua pencatatan dilakukan admin, siswa hanya terdaftar sebagai data peminjam.
+1. Admin mendaftarkan siswa (nama, email, kelas).
+2. Siswa datang ke perpustakaan dan memilih buku.
+3. Admin mencatat peminjaman atas nama siswa, lengkap dengan batas pengembalian.
+4. Siswa mengembalikan buku sebelum batas tanggal.
+5. Admin menekan tombol Kembalikan. Kalau terlambat, denda Rp1.000 per hari dicatat di data peminjaman siswa.
